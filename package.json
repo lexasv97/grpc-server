@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/grpc-server.js",
     "start:dev": "ts-node grpc-server.ts",
-    "build": "tsc"
+    "build": "tsc && cp -R proto dist/"
   },
   "keywords": [],
   "author": "",

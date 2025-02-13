@@ -1,0 +1,22 @@
+//
+//  HTML2PDFConverter.proto
+//  SmartLoad
+//
+//  Created by Alex Sherbakov on 06-04-24.
+//
+
+syntax = "proto3";
+
+//package converter;
+
+service HTML2PDFConverter {
+	rpc ConvertHTMLToPDF (HTMLInputData) returns (PDFOutputData) {}
+}
+
+message HTMLInputData {
+	bytes data = 1;
+}
+
+message PDFOutputData {
+	bytes data = 1;
+}
